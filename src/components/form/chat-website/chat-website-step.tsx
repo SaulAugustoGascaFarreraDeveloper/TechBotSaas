@@ -19,12 +19,12 @@ type ChatWebsiteStepProps = {
 
 const ChatForm = dynamic(() => import("./chat-website-form"),{
     ssr: false,
-    loading: Spinner
+    loading: () => <Spinner />
 })
 
 const TTSForm = dynamic(() => import('./text-to-speech-form'),{
     ssr: false,
-    loading: Spinner
+    loading: () => <Spinner />
 })
 
 const ChatWebsiteStep = ({loading} : ChatWebsiteStepProps) => {

@@ -6,7 +6,7 @@ export const onValidUrlWebsite = async (url: string) => {
 
     try{
 
-        const response = await axios.post("http://localhost:8000/api/scrape",{
+        const response = await axios.post("https://fastapichatwebsite.onrender.com/api/scrape",{
             url: url
         })
 
@@ -33,7 +33,7 @@ export const onChatWithWebsite = async (message: string) => {
     
     try{
 
-        const response = await axios.post('http://localhost:8000/api/chat',{
+        const response = await axios.post('https://fastapichatwebsite.onrender.com/api/chat',{
             message: message
         })
 

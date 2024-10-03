@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form"
 import { toast, useToast } from "../use-toast"
-import { ChatWebsiteProps, ChatWebsiteSchema, GenerateAudioContentProps, GenerateAudioContentSchema, GenerateudioContentProps, ValidWebsiteProps, ValidWebsiteSchema } from "@/schemas/chat-website.schema"
+import { ChatWebsiteProps, ChatWebsiteSchema, GenerateAudioContentProps, GenerateAudioContentSchema, ValidWebsiteProps, ValidWebsiteSchema } from "@/schemas/chat-website.schema"
 import {zodResolver} from "@hookform/resolvers/zod"
 import { useEffect, useState } from "react"
 import { onChatWithWebsite, onValidUrlWebsite } from "@/actions/chat-website"
